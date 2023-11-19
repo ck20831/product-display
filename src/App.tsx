@@ -43,7 +43,7 @@ function App() {
                     <Suspense>
                         <Environment
                             blur={0.05}
-                            files="skybox/apartment_4k.hdr"
+                            files="skybox/room_4k.hdr"
                             background
                         />
                     </Suspense>

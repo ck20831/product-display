@@ -73,16 +73,16 @@ export function Picker() {
                 <Text fontSize={28} color="white">{selectedProduct}</Text>
                 <SegmentedControl defaultValue={1}>
                     <SegmentedControlButton value={1}>
-                        <Text>黑</Text>
+                        <Text>黑色</Text>
                     </SegmentedControlButton>
                     <SegmentedControlButton value={2}>
-                        <Text>白</Text>
+                        <Text>白色</Text>
                     </SegmentedControlButton>
                     <SegmentedControlButton value={3}>
-                        <Text>黃</Text>
+                        <Text>黃色</Text>
                     </SegmentedControlButton>
                     <SegmentedControlButton value={4}>
-                        <Text>藍</Text>
+                        <Text>藍色</Text>
                     </SegmentedControlButton>
                 </SegmentedControl>
             </Glass>

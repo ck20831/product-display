@@ -13,10 +13,7 @@ function ProductDisplay() {
     const aspectRatio = useThree(({size}) => size.width / size.height);
 
     const fontFamilies = useMemo(() => ({
-        medium: ["https://coconut-xr.github.io/msdf-fonts/", "inter.json"] as [string, string],
-        bold: ["https://coconut-xr.github.io/msdf-fonts/", "inter-bold.json"] as [string, string],
         test: ["/product-display/font/test-msdf/", "test-msdf.json"] as [string, string],
-        ar: ["/product-display/font/AROneSans-Regular-msdf/", "AROneSans-Regular-msdf.json"] as [string, string]
     }), []);
 
     const handleChangePage = (newPage: SetStateAction<string>) => {
