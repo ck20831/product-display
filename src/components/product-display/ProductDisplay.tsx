@@ -15,8 +15,8 @@ function ProductDisplay() {
     const fontFamilies = useMemo(() => ({
         medium: ["https://coconut-xr.github.io/msdf-fonts/", "inter.json"] as [string, string],
         bold: ["https://coconut-xr.github.io/msdf-fonts/", "inter-bold.json"] as [string, string],
-        test: ["/font/test-msdf/", "test-msdf.json"] as [string, string],
-        ar: ["/font/AROneSans-Regular-msdf/", "AROneSans-Regular-msdf.json"] as [string, string]
+        test: ["/product-display/font/test-msdf/", "test-msdf.json"] as [string, string],
+        ar: ["/product-display/font/AROneSans-Regular-msdf/", "AROneSans-Regular-msdf.json"] as [string, string]
     }), []);
 
     const handleChangePage = (newPage: SetStateAction<string>) => {
@@ -27,7 +27,7 @@ function ProductDisplay() {
         <group position={[0, 1.5, -0.5]} scale={Math.min(1, aspectRatio * 0.6) / 1200}>
             <FontFamilyProvider
                 fontFamilies={fontFamilies}
-                defaultFontFamily="medium"
+                defaultFontFamily="test"
             >
                 <Suspense fallback={null}>
                     <RootContainer
@@ -42,7 +42,6 @@ function ProductDisplay() {
                         alignItems="stretch"
                     >
                         <TabBarsPage onPageChange={handleChangePage}/>
-                        {/*<Sidebar onPageChange={handleChangePage}/>*/}
                         {(activePage === 'product' || activePage === 'picker') && <Products/>}
                         {activePage === 'intro' && <Intro/>}
                         {activePage === 'team' && <Team/>}

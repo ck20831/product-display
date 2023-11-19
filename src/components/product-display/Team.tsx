@@ -18,7 +18,7 @@ function Team() {
                 alignItems="center"
                 gapRow={16}
             >
-                    <Text paddingX={8} paddingY={12} paddingTop={30} alignItems="center" fontSize={30} color="white" fontFamily="test">
+                    <Text paddingX={8} paddingY={12} paddingTop={30} alignItems="center" fontSize={30} color="white">
                         團隊成員
                     </Text>
             </Container>
