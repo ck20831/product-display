@@ -1,5 +1,5 @@
 import {getInputSourceId} from "@coconut-xr/natuerlich";
-import {PointerController, PointerHand} from "@coconut-xr/natuerlich/defaults";
+import {GrabHand, PointerController} from "@coconut-xr/natuerlich/defaults";
 import {
     ImmersiveSessionOrigin,
     useInputSources,
@@ -12,7 +12,7 @@ function ImmersiveSession() {
         <ImmersiveSessionOrigin>
             {inputSources.map((inputSource) =>
                 inputSource.hand != null ? (
-                    <PointerHand
+                    <GrabHand
                         cursorOpacity={2}
                         key={getInputSourceId(inputSource)}
                         id={getInputSourceId(inputSource)}
