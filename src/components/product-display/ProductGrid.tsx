@@ -10,7 +10,7 @@ const products = [
     {
         name: "雙人座沙發",
         image: "images/2.jpg",
-        glb: "3D_object/Chair.glb"
+        glb: "3D_object/Double_Sofa.glb"
     },
     {
         name: "雙人座電動沙發",

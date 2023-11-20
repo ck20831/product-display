@@ -1,4 +1,4 @@
-import {Grabbable, XRCanvas} from "@coconut-xr/natuerlich/defaults";
+import {Controllers, Grabbable, Hands, XRCanvas} from "@coconut-xr/natuerlich/defaults";
 import {
     NonImmersiveCamera,
     SessionModeGuard,
@@ -7,7 +7,6 @@ import {
 } from "@coconut-xr/natuerlich/react";
 import {Environment} from "@react-three/drei";
 import {Suspense, useState} from "react";
-import ImmersiveSession from "./components/ImmersiveSession";
 import {EnterDialog} from "./components/html/enter";
 import {SessionInfo} from "./components/html/info";
 import ProductDisplay from "./components/product-display/ProductDisplay.tsx";
@@ -21,7 +20,6 @@ function App() {
     const frameBufferScaling = useNativeFramebufferScaling();
     const frameRate = useHeighestAvailableFrameRate();
 
-    // @ts-ignore
     return (
         <>
             {state === "enter-dialog" && <EnterDialog setState={setState}/>}
@@ -37,7 +35,11 @@ function App() {
                 <directionalLight position={[-2, 2, 2]} intensity={1.6}/>
                 <Grabbable>
                     <SelectGlb/>
+                    <Hands type="grab"></Hands>
+                    <Controllers type="grab"/>
                 </Grabbable>
+                {/*<Hands type="grab"></Hands>*/}
+                {/*<Controllers type="grab"/>*/}
                 <ProductDisplay/>
                 <SessionModeGuard deny="immersive-ar">
                     <Suspense>
@@ -48,7 +50,6 @@ function App() {
                         />
                     </Suspense>
                 </SessionModeGuard>
-                <ImmersiveSession/>
                 <NonImmersiveCamera position={[0, 1.5, 0.7]}/>
             </XRCanvas>
         </>

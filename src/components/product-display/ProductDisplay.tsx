@@ -5,6 +5,7 @@ import Products from "./Products";
 import Intro from "./Intro";
 import Team from "./Team";
 import TabBarsPage from "./Sidebar.tsx";
+import ImmersiveSession from "../ImmersiveSession.tsx";
 
 
 function ProductDisplay() {
@@ -38,6 +39,7 @@ function ProductDisplay() {
                         flexDirection="row"
                         alignItems="stretch"
                     >
+                        <ImmersiveSession/>
                         <TabBarsPage onPageChange={handleChangePage}/>
                         {(activePage === 'product' || activePage === 'picker') && <Products/>}
                         {activePage === 'intro' && <Intro/>}

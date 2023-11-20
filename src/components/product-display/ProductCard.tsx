@@ -96,7 +96,7 @@ export function SelectGlb() {
     globalSetSelectedGlb = setSelectedGlb;
     return (
         <Suspense>
-            <Gltf position-x={1} position-z={-0.5} scale={0.1} src={selectedGlb}/>
+            <Gltf position-x={1} position-y={0.5} scale={0.1} src={selectedGlb}/>
         </Suspense>
     )
 }
