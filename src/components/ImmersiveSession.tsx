@@ -18,7 +18,8 @@ function ImmersiveSession() {
                         id={getInputSourceId(inputSource)}
                         inputSource={inputSource}
                         hand={inputSource.hand}
-                        cursorPressColor={"#ffd43d"}/>
+                        cursorPressColor={"#3dcbff"}
+                        cursorColor={"#ffd43d"}/>
                 ) : (
                     <PointerController
                         key={getInputSourceId(inputSource)}

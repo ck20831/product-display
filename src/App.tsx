@@ -41,7 +41,6 @@ function App() {
                 <SessionModeGuard deny="immersive-ar">
                     <Suspense>
                         <Environment
-                            blur={0.05}
                             files="skybox/room_4k.hdr"
                             background
                         />

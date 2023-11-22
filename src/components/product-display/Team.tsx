@@ -1,5 +1,6 @@
 import {Container, Text} from "@coconut-xr/koestlich";
 import Glass from "../ui/Glass";
+import {Suspense} from "react";
 
 
 function Team() {
@@ -17,10 +18,25 @@ function Team() {
                 flexDirection="column"
                 alignItems="center"
                 gapRow={16}
+                paddingX={200}
+
             >
-                    <Text paddingX={8} paddingY={12} paddingTop={30} alignItems="center" fontSize={30} color="white">
+                <Container paddingX={8} paddingY={12} paddingTop={30} alignItems="center">
+                <Suspense>
+                    <Text fontSize={32} color="white" fontFamily="test">
                         團隊成員
                     </Text>
+                    <Text paddingY={26} fontSize={20} color="white" fontFamily="test">
+                        組長：陳至楷
+                    </Text>
+                    <Text fontSize={26} paddingY={26} color="white" fontFamily="test">
+                        組員：李柏毅、陳見銜
+                    </Text>
+                    <Text fontSize={26} paddingY={26} color="white" fontFamily="test">
+                        指導教授：陳郁文
+                    </Text>
+                </Suspense>
+                </Container>
             </Container>
         </Glass>
     );
