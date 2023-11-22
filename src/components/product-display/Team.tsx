@@ -26,11 +26,11 @@ function Team() {
                     <Text fontSize={32} color="white" fontFamily="test">
                         團隊成員
                     </Text>
-                    <Text paddingY={26} fontSize={20} color="white" fontFamily="test">
+                    <Text paddingY={26} fontSize={26} color="white" fontFamily="test">
                         組長：陳至楷
                     </Text>
                     <Text fontSize={26} paddingY={26} color="white" fontFamily="test">
-                        組員：李柏毅、陳見銜
+                        組員：李柏毅 陳見銜
                     </Text>
                     <Text fontSize={26} paddingY={26} color="white" fontFamily="test">
                         指導教授：陳郁文
