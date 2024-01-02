@@ -35,7 +35,7 @@ const Container = (props: any) => (
 const InnerContainer = (props: any) => (
     <div
         style={{
-            maxWidth: "min(30rem, 80vw)",
+            maxWidth: "min(50rem, 80vw)",
             display: "flex",
             flexDirection: "column",
             rowGap: "2rem",
@@ -91,7 +91,7 @@ export const EnterDialog = ({ setState }: EnterDialogProps) => {
                         supported={arSupported}
                         enterFunction={enterAR}
                         setState={setState}
-                        stateVal="AR"
+                        stateVal="MR"
                     />
                     <XRButton
                         supported={vrSupported}
@@ -103,6 +103,7 @@ export const EnterDialog = ({ setState }: EnterDialogProps) => {
                         2D
                     </button>
                 </ButtonRow>
+                <text>不支援MR的設備將以AR呈現</text>
             </InnerContainer>
         </Container>
     );
