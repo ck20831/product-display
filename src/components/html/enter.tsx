@@ -55,7 +55,7 @@ const ButtonRow = (props: any) => (
         }}
         {...props}
     />
-);
+)
 
 const XRButton = ({ supported, enterFunction, setState, stateVal }: any) => (
     <button
@@ -70,7 +70,7 @@ const XRButton = ({ supported, enterFunction, setState, stateVal }: any) => (
     >
         {stateVal}
     </button>
-);
+)
 
 export const EnterDialog = ({ setState }: EnterDialogProps) => {
     const enterAR = useEnterXR("immersive-ar", XRSettings);
@@ -107,4 +107,4 @@ export const EnterDialog = ({ setState }: EnterDialogProps) => {
             </InnerContainer>
         </Container>
     );
-};
+}
