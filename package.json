@@ -2,7 +2,7 @@
   "name": "product-display",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https:mr.ck20831.com", 
+  "homepage": "https://mr.ck20831.com", 
   "type": "module",
   "scripts": {
     "dev": "vite",
