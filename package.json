@@ -1,7 +1,6 @@
 {
   "name": "product-display",
   "private": true,
-  "homepage": "https://mr.ck20831.com", 
   "version": "1.0.0",
   "type": "module",
   "scripts": {
